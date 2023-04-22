@@ -5,7 +5,7 @@
     --fros-blue-color: #0050d5;
     --light-blue-color: #16c5ff;
     --dark-color: #202020;
-    --dark-gray:#a1a1a0;
+    --dark-gray: #a1a1a0;
     --light-gray-color: #dedede;
     --light-color: #fff;
     --poppins-font: 'poppins', sans-sereif;
@@ -199,7 +199,7 @@ h3 {
     transition: var(--transition);
 }
 
-button[class ^= navbar]:hover {
+button[class ^=navbar]:hover {
     transform: scale(1.1);
 }
 
@@ -306,13 +306,14 @@ button[class ^= navbar]:hover {
 }
 
 /* about section */
-.section-head h2{
+.section-head h2 {
     font-size: 4rem;
     font-weight: 500;
     margin-bottom: 3rem;
     text-align: center;
 }
-.border-line{
+
+.border-line {
     height: .4rem;
     width: 100%;
     margin-right: auto;
@@ -320,7 +321,8 @@ button[class ^= navbar]:hover {
     background-color: var(--light-gray-color);
     position: relative;
 }
-.border-line::after{
+
+.border-line::after {
     content: " ";
     position: absolute;
     top: 0;
@@ -330,46 +332,73 @@ button[class ^= navbar]:hover {
     width: 102px;
     background-color: var(--light-blue-color);
 }
+
 .about-left {
     margin-bottom: 6rem;
 }
-.about-right{
+
+.about-right {
     margin-top: 16.8rem;
 }
-.about-left .text{
+
+.about-left .text {
     margin: 5.6rem 0;
     line-height: 2.3;
 }
-.about .btn-white{
+
+.about .btn-white {
     color: var(--dark-gray);
 }
-.about-right .img{
+
+.about-right .img {
     width: 100%;
     background-color: #3983fa;
     max-width: 537px;
     position: relative;
 }
-.about-right .img img{
+
+.about-right .img img {
     padding-top: 10rem;
     transform: scaleX(1.03);
 }
-.about-right .img::after, .about-right .img::before {
+
+.about-right .img::after,
+.about-right .img::before {
     content: " ";
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.about-right .img::after{
+
+.about-right .img::after {
     top: -56px;
     left: 0;
     background-color: #0068ff;
     z-index: -1;
 }
-.about-right .img::before{
+
+.about-right .img::before {
     top: -112px;
     left: 0;
     background-color: var(--fros-blue-color);
     z-index: -2;
+}
+
+/* banner one section */
+.banner-one {
+    background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url(/images/banner-1-img.png)top/cover no-repeat;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-one .lead{
+    font-size: 2.8rem;
+    font-weight: 500;
+    max-width: 600px;
+}
+.banner-one .text-sm{
+    font-weight: 500;
 }
 
 /* Media Queries */
@@ -377,14 +406,17 @@ button[class ^= navbar]:hover {
     .navbar-collapse {
         width: 320px;
     }
-    .btn-group .btn{
+
+    .btn-group .btn {
         width: auto;
     }
-    .btn-group .btn:first-child{
+
+    .btn-group .btn:first-child {
         margin-right: 48px;
         margin-bottom: 0;
     }
-    .border-line{
+
+    .border-line {
         width: 405px;
     }
 }
@@ -425,25 +457,31 @@ button[class ^= navbar]:hover {
         right: 0;
         padding-left: 5rem;
     }
+
     .about-inner .container {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 3rem;
     }
-    .about-left{
+
+    .about-left {
         text-align: left;
         margin-bottom: 0;
     }
-    .about-left .section-head h2{
+
+    .about-left .section-head h2 {
         text-align: left;
     }
-    .border-line{
+
+    .border-line {
         margin-left: 0;
     }
-    .border-line::after{
+
+    .border-line::after {
         left: 0;
         transform: translateX(0);
     }
-    .about-right{
+
+    .about-right {
         margin-left: auto;
         margin-top: 11.2rem;
     }
@@ -533,18 +571,21 @@ button[class ^= navbar]:hover {
     .search-control {
         width: 150px;
     }
-    .header-inner-right{
+
+    .header-inner-right {
         width: 100%;
     }
-    
-    .header-inner-right img{
+
+    .header-inner-right img {
         padding-left: 0;
         max-width: 647px;
     }
 }
-@media(min-width:1480px){
+
+@media(min-width:1480px) {
+
     /* general */
-    .container{
+    .container {
         max-width: 81vw;
     }
 }
